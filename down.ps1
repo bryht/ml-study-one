@@ -1,0 +1,1 @@
+docker-compose -p 'study-one' -f ./docker-compose.yml down

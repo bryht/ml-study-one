@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+  data-input-api:
+    ports:
+      - "6001:6001"
+    networks:
+      - local-network
+      
+  mongo:
+    image: mongo:latest
+    ports:
+     - "27017:27017"
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    networks:
+     - local-network
+    volumes:
+      - mongodata:/data/db
+
+networks:
+  local-network:
+    driver: bridge
+    attachable: true
+
+volumes:
+  mongodata:
