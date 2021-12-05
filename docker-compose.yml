@@ -2,8 +2,10 @@ version: '3.7'
 
 services:
   data-input-api:
+    build:
+      context: ./src/data-input-api
     ports:
-      - "6001:6001"
+      - "6001:8000"
     networks:
       - local-network
       
