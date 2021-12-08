@@ -15,6 +15,18 @@
             ],
             "jinja": true
 
+        },
+        {
+            "name": "data-output-api",
+            "cwd": "${workspaceFolder}/src/data-output-api",
+            "type": "python",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "main:app"
+            ],
+            "jinja": true
+
         }
     ]
 }
