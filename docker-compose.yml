@@ -8,6 +8,13 @@ services:
       - "6001:8000"
     networks:
       - local-network
+  data-output-api:
+    build:
+      context: ./src/data-output-api
+    ports:
+      - "6002:8000"
+    networks:
+      - local-network
       
   mongo:
     image: mongo:latest

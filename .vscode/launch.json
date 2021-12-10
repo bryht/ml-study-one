@@ -11,8 +11,12 @@
             "request": "launch",
             "module": "uvicorn",
             "args": [
-                "main:app"
+                "main:app",
+                "--reload"
             ],
+            "env": {
+                "MONGODB_URL": "localhost:27017"
+            },
             "jinja": true
 
         },
@@ -23,8 +27,12 @@
             "request": "launch",
             "module": "uvicorn",
             "args": [
-                "main:app"
+                "main:app",
+                "--reload"
             ],
+            "env": {
+                "MONGODB_URL": "localhost:27017"
+            },
             "jinja": true
 
         }
