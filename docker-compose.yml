@@ -15,6 +15,12 @@ services:
       - "6002:8000"
     networks:
       - local-network
+
+  data-output-robot:
+    build:
+      context: ./src/data-robot
+    networks:
+      - local-network
       
   mongo:
     image: mongo:latest
