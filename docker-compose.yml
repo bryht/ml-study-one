@@ -16,7 +16,7 @@ services:
     networks:
       - local-network
 
-  data-output-robot:
+  data-robot:
     build:
       context: ./src/data-robot
     networks:
