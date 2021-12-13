@@ -22,7 +22,7 @@ services:
       context: ./src/data-robot
     networks:
       - local-network
-      
+
   mongo:
     image: mongo:latest
     ports:
