@@ -15,7 +15,7 @@
                 "--reload"
             ],
             "env": {
-                "MONGODB_URL": "localhost:27017"
+                "MONGODB_URL": "localhost:27061"
             },
             "jinja": true
 
@@ -31,7 +31,7 @@
                 "--reload"
             ],
             "env": {
-                "MONGODB_URL": "localhost:27017"
+                "MONGODB_URL": "localhost:27061"
             },
             "jinja": true
 
