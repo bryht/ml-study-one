@@ -26,7 +26,7 @@ services:
   mongo:
     image: mongo:latest
     ports:
-     - "27061:27061"
+     - "27061:27017"
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
     networks:
