@@ -8,4 +8,4 @@
 
 * get data
 
-`curl http://localhost:6002`
+`curl http://localhost:6002 | Select-Object -Expand RawContent` 
