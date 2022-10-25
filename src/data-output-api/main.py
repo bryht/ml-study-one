@@ -9,5 +9,5 @@ app = FastAPI()
 def read_root():
     client = MongoClient(config('MONGODB_URL'))
     db = client.pico
-    result=db.picodata.find({})
+    result=db.picodata.find({}).__projection()
     return dumps(result)
